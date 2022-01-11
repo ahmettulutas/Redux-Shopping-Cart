@@ -20,7 +20,7 @@ const CartList = ({ displayBool, cart }) => {
             <ButtonSection item={item} />
           </div>
         ))}
-        <p>{total}</p>
+        <p className="cartlist-total-p">Total Price = {total}</p>
       </div>
     );
   } else {

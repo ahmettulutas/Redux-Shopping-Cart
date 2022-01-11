@@ -86,6 +86,7 @@ svg {
   flex-direction: row;
   position: relative; /* this is important for cart-list div to be connected */
   margin: 1rem;
+  z-index: 98;
 }
 .cart p {
   padding-top: 0.4rem;
@@ -95,7 +96,6 @@ svg {
 }
 .cart-icons-div {
   cursor: pointer;
-  z-index: 98;
 }
 .cart-icons-div span {
   position: absolute;
@@ -104,7 +104,7 @@ svg {
   min-width: 0.8rem;
   height: auto;
   border-radius: 50%;
-  background-color: green;
+  background-color: darkorange;
   color: white;
   font-weight: bold;
   font-size: 0.7em;
@@ -127,11 +127,11 @@ svg {
   flex-direction: column;
   position: absolute;
   animation: fade-in 0.4s ease-out forwards;
-  max-width: 320px;
+  max-width: 340px;
   background-color: white;
-  top: 88px;
+  top: 83px;
   right: 0;
-  padding: 20px;
+  padding: 10px;
 }
 .cartlist-shown img {
   height: 150px;
@@ -193,7 +193,13 @@ svg {
   font-size: 0.7rem;
   font-weight: normal;
 }
-
+.cartlist-total-p {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: yellowgreen;
+  margin: 5px auto;
+}
 .shown-block-search-bar {
   display: flex;
   position: absolute;
@@ -292,5 +298,11 @@ svg {
     font-size: 0.6rem;
     gap: 0.2rem;
     padding: 0.5rem;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .shown-block-search-bar input {
+    margin-left: 0.4rem;
   }
 }
