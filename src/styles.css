@@ -21,7 +21,7 @@ body {
   grid-row: 2 / span 1;
 }
 .products-main {
-  margin: 2rem auto;
+  margin: 6rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
