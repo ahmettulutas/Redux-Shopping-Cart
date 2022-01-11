@@ -19,7 +19,7 @@ const Cart = () => {
   return (
     <div className="cart">
       <p>My Cart</p>
-      <div onClick={handleClick} className="cart-icons-div">
+      <div className="cart-icons-div">
         <span>{cartItems}</span>
         <svg
           onClick={handleClick}

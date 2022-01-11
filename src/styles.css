@@ -21,14 +21,14 @@ body {
   grid-row: 2 / span 1;
 }
 .products-main {
-  margin: 7rem auto;
+  margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1080px;
+  max-width: 1280px;
 }
 .product-div {
-  max-width: 330px;
+  flex-basis: 180px;
   max-height: 230px;
   line-height: 0;
   border: 2px solid green;
@@ -129,7 +129,7 @@ svg {
   animation: fade-in 0.4s ease-out forwards;
   max-width: 320px;
   background-color: white;
-  top: 48;
+  top: 88px;
   right: 0;
   padding: 20px;
 }
@@ -210,6 +210,7 @@ svg {
   border-radius: 5px;
   margin-right: 0.2rem;
   background-color: lightgreen;
+  padding: 0.4rem;
 }
 .clear-button {
   border: 3px solid green;
@@ -217,6 +218,7 @@ svg {
   color: white;
   background-color: green;
   font-size: 17px;
+  padding: 0.3rem;
 }
 .search-button {
   min-width: 65px;
@@ -277,6 +279,18 @@ svg {
     min-width: 350px;
   }
   .header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 557px) {
+  .products-main {
+    margin: 0.5rem auto;
+  }
+  .product-div {
+    flex-basis: 100px;
+    max-height: 180px;
+    font-size: 0.6rem;
+    gap: 0.2rem;
+    padding: 0.5rem;
   }
 }
