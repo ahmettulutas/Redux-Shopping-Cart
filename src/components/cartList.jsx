@@ -7,20 +7,22 @@ const CartList = ({ displayBool, cart }) => {
   if (cart.length > 0) {
     return (
       <div className={displayBool ? "cartlist-shown" : "cartlist-hidden"}>
-        {cart.map((item) => (
-          <div className="cartlist-item">
-            <img alt={item.name} src={item.image}></img>
-            <div className="cartlist-item-textdiv">
-              <p>{item.name}</p>
-              <div className="product-details-div">
-                <p>Amount : {item.quantity}</p>
-                <p>Price : {item.price * item.quantity} $</p>
+        <div className="cartlist-main">
+          {cart.map((item) => (
+            <div className="cartlist-item">
+              <img alt={item.name} src={item.image}></img>
+              <div className="cartlist-item-textdiv">
+                <p>{item.name}</p>
+                <div className="product-details-div">
+                  <p>Amount : {item.quantity}</p>
+                  <p>Price : {item.price * item.quantity} $</p>
+                </div>
               </div>
+              <ButtonSection item={item} />
             </div>
-            <ButtonSection item={item} />
-          </div>
-        ))}
-        <p className="cartlist-total-p">Total Price = {total}</p>
+          ))}
+        </div>
+        <p className="cartlist-total-p">Total Price : {total} $</p>
       </div>
     );
   } else {
